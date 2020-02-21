@@ -1,5 +1,10 @@
 {% extends 'posts/base.html' %}
 {% block body %}
+    <center><h1>New Post</h1></center>
+    <form action="" method="post">
+        {{ form.as_p }}
+        <input type="submit" value="Submit" class="btn btn-success">
+    </form>
     
 {% endblock body %}
     
