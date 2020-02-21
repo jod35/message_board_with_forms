@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>My Message Board</title>
+    <link rel="stylesheet" href="{% static 'posts/main.css' %}">
+</head>
+<body>
+    <header class="navbar nav bg-success">
+        <h1>Message Board</h1>
+        <a href="{% url 'site_home' %}">Home</a>|
+        <a href="{% url 'site_login' %}">Home</a>|
+        <a href="{% url 'site_signup' %}">Home</a>|
+    </header>
+    <div class="main container">
+        {% block body %}
+        
+        {% endblock body %}
+    </div>
+    <footer class="footer bg-success">
+       <center>&copy; Message Board 2020</center>
+    </footer>
+        
+</body>
+</html>
